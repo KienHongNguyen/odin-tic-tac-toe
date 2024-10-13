@@ -1,0 +1,43 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.gameboard {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  justify-content: center;
+  gap: 5px;
+  margin: 20px auto;
+}
+
+.square {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  background-color: #f4f4f4;
+  border: 1px solid #000;
+  cursor: pointer;
+}
+
+.info {
+  margin-top: 20px;
+}
+
+input,
+button {
+  margin: 5px;
+  padding: 10px;
+  font-size: 1em;
+}
+
+#gameStatus {
+  margin-top: 20px;
+  font-size: 1.2em;
+}
